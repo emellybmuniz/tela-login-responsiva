@@ -64,7 +64,6 @@ div#formulario-container {
     font-weight: 600;
 }
 
-
 #formulario-dados input {
     padding: 15px 0px;
     padding-left: 15px;
@@ -99,10 +98,9 @@ div#formulario-container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin: 10px;
+    margin: 10px 0px;
     gap: 7px;
-    width: 90vw;
+    width: 250px;
 }
 
 .botao-container button {
