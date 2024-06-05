@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#formulario-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+    max-width: 70%;
+    height: 80%;
+}
+
+#formulario-container img {
+    position: relative;
+    border-radius: 35px 35px 0px 0px;
+    width: 100%; 
+}
+
+#formulario-container input {
+    padding: 15px;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgb(93, 93, 93);
+}
+#imagem-container {
+    margin: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#formulario-container img {
+    max-width: 180px;
+}
+
+#mensagem-login {
+    text-align: center;
+    padding: 8px;
+    margin: 5px;
+}
+
+#mensagem-login p {
+    padding: 10px;
+}
+
+#formulario-login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    padding: 0px 10px;
+}
+
+#formulario-login div {
+    background-color: #5a4bd1;
+}
+
+#email-container {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+#senha-container {
+    margin: 10px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 5px;
+}
+
+#formulario-login span {
+    width: 30px;
+    padding: 4px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 200,
+  'opsz' 24
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 200,
+  'opsz' 24
+}
+
+
+
+
