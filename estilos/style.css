@@ -139,7 +139,7 @@ div#formulario-container {
 
     div#formulario-container {
         width: 75%;
-        height: 75vh;
+        max-height: 80%;
     }
 
     #formulario-dados input {
@@ -178,4 +178,14 @@ div#formulario-container {
 
 }
 }
+
+@media screen(orientation:landscape) {
+    div#forumalario-container {
+        height: 80%
+    }
+
+
+}
+
+
 
