@@ -13,6 +13,8 @@ html, body {
 body {
     background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
@@ -24,10 +26,10 @@ main {
 }
 
 div#formulario-container {
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     border-radius: 35px;
     width: 70%;
-    height: 80vh;
+    height: 560px;
     box-shadow: 2px 1px 2px 1px rgba(23, 23, 23, 0.375);  
 }
 
@@ -59,7 +61,7 @@ div#formulario-container {
 }
 
 #mensagem-login p {
-    padding: 10px;
+    padding: 20px 8px 0px;
     color: #3d3d3d;
     font-weight: 600;
 }
@@ -125,7 +127,7 @@ div#formulario-container {
   'opsz' 24
 }
 
-@media (max-width:414px) {
+@media (max-width:420px) {
     body main {
         background-color: #30cfd0;
         font-size: 14px;
@@ -143,7 +145,7 @@ div#formulario-container {
     #formulario-dados input {
         padding: 15px 0px;
         padding-left: 15px;
-        width: 130px;
+        width: 150px;
         outline: none;
         border-radius: 0px 5px 5px 0px;
         border: 1px solid rgb(93, 93, 93);   
@@ -175,8 +177,5 @@ div#formulario-container {
         justify-content: center;
 
 }
-
-
-
-
+}
 
