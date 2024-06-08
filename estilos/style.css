@@ -1,190 +1,182 @@
 @charset "UTF-8";
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-html, body {
-    height: 100vh;
-    width: 100vw;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    font-family: Arial, Helvetica, sans-serif;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 main {
-    width: 100vw;
-    height: 100vh; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div#formulario-container {
-    background-color: #ffffff;
-    border-radius: 35px;
-    width: 70%;
-    height: 560px;
-    box-shadow: 2px 1px 2px 1px rgba(23, 23, 23, 0.375);  
+  background-color: #ffffff;
+  border-radius: 35px;
+  width: 70%;
+  height: 560px;
+  box-shadow: 2px 1px 2px 1px rgba(23, 23, 23, 0.375);
 }
 
 #imagem-container img {
-    position: relative;
-    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.658);
-    border-radius: 50%;
-    width: 100%; 
-    max-width: 180px;
-    -webkit-user-drag: none;
+  position: relative;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.658);
+  border-radius: 50%;
+  width: 100%;
+  max-width: 180px;
+  -webkit-user-drag: none;
 }
 
 #imagem-container {
-    margin: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #mensagem-login {
-    text-align: center;
-    padding: 8px;
-    margin: 5px;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
 }
 
 #mensagem-login h1 {
-    text-transform: capitalize;
-    text-shadow: 1px 2px 2px rgba(22, 21, 21, 0.241);
+  text-transform: capitalize;
+  text-shadow: 1px 2px 2px rgba(22, 21, 21, 0.241);
 }
 
 #mensagem-login p {
-    padding: 20px 8px 0px;
-    color: #3d3d3d;
-    font-weight: 600;
+  padding: 20px 8px 0px;
+  color: #3d3d3d;
+  font-weight: 600;
 }
 
 #formulario-dados input {
-    padding: 15px 0px;
-    padding-left: 15px;
-    outline: none;
-    border-radius: 0px 5px 5px 0px;
-    border: 1px solid rgb(93, 93, 93);   
+  padding: 15px 0px;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid rgb(93, 93, 93);
 }
 
 #formulario-dados {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#formulario-dados .input-dados {
+  background-color: #fc0ace;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.367);
+}
+
+#formulario-dados span {
+  padding: 10px;
+}
+
+.botao-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0px;
+  gap: 7px;
+  width: 250px;
+}
+
+.botao-container button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid rgb(93, 93, 93);
+}
+
+.botao-container button:hover {
+  border: none;
+  background-color: #e32ac1;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 1, "opsz" 24;
+}
+
+@media (max-width: 420px) {
+  body main {
+    background-color: #30cfd0;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  div#formulario-container {
+    width: 75%;
+    max-height: 80%;
+  }
+
+  #formulario-dados input {
+    padding: 15px 0px;
+    padding-left: 15px;
+    width: 150px;
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgb(93, 93, 93);
+  }
+
+  #formulario-dados {
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-#formulario-dados .input-dados {
-    background-color: #FC0ACE;
-    margin: 10px;
+  #formulario-dados .input-dados {
+    margin: 0px 0px 10px;
     display: flex;
     align-items: center;
     justify-items: center;
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.367);
+  }
+
+  #formulario-dados span {
+    padding: 9px;
+  }
+
+  .botao-container {
+    justify-content: center;
+  }
 }
 
-#formulario-dados span {
-    padding: 10px;
+@media screen and (orientation: landscape) {
+  div#forumalario-container {
+    background-color: #30cfd0;
+    height: 100%;
+  }
 }
-
-.botao-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px 0px;
-    gap: 7px;
-    width: 250px;
-}
-
-.botao-container button {
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid rgb(93, 93, 93);
-}
-
-.botao-container button:hover {
-    border: none;
-    background-color: #e32ac1;
-    color: white;
-    transition-duration: 0.4s;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 1,
-  'opsz' 24
-}
-
-@media (max-width:420px) {
-    body main {
-        background-color: #30cfd0;
-        font-size: 14px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    div#formulario-container {
-        width: 75%;
-        max-height: 80%;
-    }
-
-    #formulario-dados input {
-        padding: 15px 0px;
-        padding-left: 15px;
-        width: 150px;
-        outline: none;
-        border-radius: 0px 5px 5px 0px;
-        border: 1px solid rgb(93, 93, 93);   
-    }
-    
-    #formulario-dados {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #formulario-dados .input-dados {
-        margin: 0px 0px 10px;
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        border-radius: 5px;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.367);
-    }
-    
-    #formulario-dados span {
-        padding: 9px;
-    }
-
-    .botao-container {
-        justify-content: center;
-
-}
-}
-
-@media screen and (orientation:landscape) {
-    div#forumalario-container {
-        background-color: #30cfd0;
-        height: 100%;
-    }
-
-}
-
-
-
