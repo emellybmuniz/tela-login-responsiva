@@ -8,19 +8,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="estilos/style.css" />
-    <link rel="stylesheet" href="estilos/telasgrandes.css" media="(min-width:700px)">
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
   </head>
   <body>
     <main>
-      <div id="formulario-container">
-        <div id="imagem-container">
-          <img src="imagens/undraw_profile_pic_re_iwgo.svg" alt="" />
+      <section class="login-card">
+        <div class="login-card__image-container">
+          <img
+            src="imagens/undraw_male_avatar_g98d.svg"
+            alt="Avatar de usuário"
+          />
         </div>
 
-        <div id="mensagem-login">
+        <div class="login-card__header">
           <h1>Login</h1>
           <p>
             Bem-vindo de volta! <br />
@@ -28,8 +30,8 @@
           </p>
         </div>
 
-      <form action="#" id="formulario-dados" autocomplete="on">
-          <div class="input-dados">
+        <form action="#" class="login-form" autocomplete="on">
+          <div class="form-field">
             <label for="email"
               ><span class="material-symbols-outlined"> person </span></label
             >
@@ -39,13 +41,11 @@
               id="email"
               placeholder="Digite seu e-mail"
               autocomplete="email"
-              maxlength="254"
-              size="25"
               required
             />
           </div>
 
-          <div class="input-dados">
+          <div class="form-field">
             <label for="senha">
               <span class="material-symbols-outlined"> lock </span></label
             >
@@ -54,19 +54,21 @@
               name="senha"
               id="senha"
               placeholder="Digite sua senha"
-              minlength="8"
-              maxlength="32"
               autocomplete="current-password"
-              size="25"
               required
             />
           </div>
 
-          <div class="botao-container">
-            <button type="submit" value="Login">Login</button>
-            <button type="submit">Esqueceu a senha?</button>
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary">Entrar</button>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
           </div>
-      </form>
+        </form>
+
+        <div class="signup-link">
+          <p>É novo por aqui? <a href="#">Crie sua conta</a></p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
